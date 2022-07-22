@@ -1,0 +1,26 @@
+{
+  "name": "order_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryumhan/order_bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryumhan/order_bot/issues"
+  },
+  "homepage": "https://github.com/ryumhan/order_bot#readme",
+  "devDependencies": {
+    "electorn": "^0.0.1-security",
+    "electron": "^19.0.9",
+    "electron-builder": "^23.1.0"
+  }
+}
