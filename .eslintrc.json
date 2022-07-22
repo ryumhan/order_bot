@@ -1,0 +1,42 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint",  "prettier"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "no-console": "off", // console.log 금지
+    "consistent-return": "error", // return type 명시
+    "no-multiple-empty-lines": "warn", // 연속된 공백 금지
+    //TypeScript
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-this-alias": [
+      "error",
+      {
+        "allowDestructuring": true,
+        "allowedNames": ["self", "me", "scope", "parser"]
+      }
+    ],
+    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/ban-ts-comment": "off"
+    //React
+    // "react-hooks/rules-of-hooks": "error",
+    // "react/jsx-pascal-case": "warn",
+    // "react/jsx-key": "error", // loop 요소 생성시, key 필수
+    // "react/prop-types": "error",
+    // "react/jsx-fragments": "error", // React Fragment 사용시, React Import 필수
+    // "react/no-unused-state": "error", // 사용되지 않는 state
+    // "react/self-closing-comp": "warn", // 셀프 클로징 태그 가능하면 적용
+    // "react/jsx-curly-brace-presence": "warn" // jsx 내 불필요한 중괄호 금지
+  }
+}
